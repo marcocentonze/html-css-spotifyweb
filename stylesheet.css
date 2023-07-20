@@ -37,6 +37,9 @@ body{
     margin: 15px 15px;
     overflow: auto;
 }
+.list-unstyled{
+    text-decoration: none;
+}
 
 /* FINE UTILITIES */
 
@@ -61,11 +64,42 @@ body{
     height: 60px;
     background-color:green;
 }
+.logo-lg {
+    width: 75%;
+    display: block;
+}
+
+.logo-sm {
+    display: none;
+}
+
 .home{
     width: 200px;
     height: 130px;
     background-color: yellow;
     margin-top: 20px;
+}
+img.icon-sidebar{
+    width: 15%;
+}
+.new-play {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.add-play{
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
+}
+
+ul.play-list-costum li a {
+    display: inline-block;
+    margin: 0.25rem 0;
+    font-weight: bold;
 }
 .playlist{
     width: 200px;
@@ -171,3 +205,11 @@ footer{
     height: 90px;
     background-color:var(--spot-black)
 }
+
+
+
+/* fine footer */
+
+/*.hide-sm {
+    display: none;
+}*/
