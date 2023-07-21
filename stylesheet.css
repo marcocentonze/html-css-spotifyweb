@@ -34,7 +34,6 @@ body{
 .container{
     width: 100%;
     height: calc(100vh - 90px - 85px);
-    margin: 15px 15px;
     overflow: auto;
     background-color: var(--spot-primary);
 }
