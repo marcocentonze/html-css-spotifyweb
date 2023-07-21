@@ -203,6 +203,7 @@ button.button-upgrade{
         font-size: 0.75rem;
         font-weight: bold;
         text-transform: uppercase;
+        margin-right:10px;
     
 }
 /* / top sidebar */
@@ -214,6 +215,9 @@ button.button-upgrade{
 }
 div.first-playlist{
     padding-left:20px;
+}
+.col{
+    width: calc(100% / 12 * 6);
 }
 .genre {
     width:100%;
@@ -528,3 +532,29 @@ span.circle-right{
 /*.hide-sm {
     display: none;
 }*/
+
+/*---------- MEDIA QUERIES ----------*/
+/* TABLET */
+@media screen and (max-width: 768px) {
+
+    .col-md { 
+    width: calc(100% / 3);
+        
+    }
+
+
+}
+
+/* /tablet */
+
+/* mobile */
+
+@media screen and (max-width: 475px) {
+
+   
+
+  
+
+}
+
+/* /mobile */
