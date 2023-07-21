@@ -33,7 +33,7 @@ body{
 }
 .container{
     width: 100%;
-    height: calc(100vh - 90px - 85px);
+    height: calc(100vh - 90px - 100px);
     overflow: auto;
     background-color: var(--spot-primary);
 }
@@ -70,7 +70,7 @@ body{
     background-color:var(--spot-black);
     justify-content: space-between;
     overflow-y: auto;
-    padding-left:20px; 
+    padding-left:10px;
 }
 
 
@@ -97,6 +97,14 @@ body{
 }
 .home p{
     color:gray;
+}
+
+.hover-green>li:first-child{
+    border-bottom: 1px solid #adff2f;
+}
+.hover-green>a:hover{
+    border-left: 3px solid #adff2f;
+    padding-left:10px;
 }
 img.icon-sidebar{
     width: 15%;
@@ -133,12 +141,18 @@ ul.play-list-costum li a {
     color:gray;
     padding:5px 0;
 }
-
+.hover-menu>a:hover{
+  color:white;
+}
 .playlist{
     width: 200px;
     height: 280px;
     background-color: var(--spot-black);
     margin-top: 15px;
+   /* flex-grow: 1;
+    overflow-y: auto;  per far scrollare solo la playlist?
+    min-height: 40px;*/
+    
 }
 .profile{
     width: 200px;
@@ -239,12 +253,9 @@ div.first-playlist{
     
 }
 
-/*.genre>ul li:first-of-type:after {
-    width: 2rem;
-    border-bottom: 3px solid #adff2f;
-    margin-top: 2px;
-    transform: translateX(-50%);
-} border evidenziato  */ 
+.genre >ul li a:hover {
+    color:white;
+}   
 
 .genre >ul li a {
     text-transform: uppercase;
@@ -277,11 +288,7 @@ div.first-playlist{
     height: 230px;
     
 }
-.block-recently-played > .col {
-    width: calc(100% / 6);
-    
-    padding: 8px;
-}
+
 .title-created-for{
     width: 100%;
     height: 62px;
@@ -537,11 +544,12 @@ span.circle-right{
 /* TABLET */
 @media screen and (max-width: 768px) {
 
-    .col-md { 
+    .col { 
     width: calc(100% / 3);
-        
     }
-
+    button.button-upgrade{
+        width: 40%;
+    }
 
 }
 
